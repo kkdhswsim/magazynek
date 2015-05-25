@@ -32,7 +32,8 @@ public class connect {
          System.out.println("Polaczenie z baza");
      }
      catch(SQLException se){
-         System.out.println("Brak bazy");
+         System.out.println(se);
+         System.out.println("polaczenie z baza nie powiodlo sie");
      }
      return polaczenie;
     }
