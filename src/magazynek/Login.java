@@ -126,7 +126,7 @@ public class Login extends javax.swing.JDialog {
            ResultSet rs = ps.executeQuery();
            if(rs.next()){
                this.dispose();
-               MainMenu mm = new MainMenu();
+               Menu mm = new Menu();
                mm.show();
            }else{
                JOptionPane.showMessageDialog(null, "Niepoprawny login lub haslo" );
